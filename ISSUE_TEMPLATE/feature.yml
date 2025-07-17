@@ -1,0 +1,35 @@
+name: "\U0001F680 Feature request"
+description: Propose a new capability for JumpIn.dev
+title: "[Feature] <concise summary>"
+labels: ["🛠️ Core"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **What problem will this feature solve?**  
+        Please be specific about the user story (who, what, why).
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the change, API, or UI flow.
+      placeholder: "It should..."
+    validations:
+      required: true
+  - type: dropdown
+    id: stack
+    attributes:
+      label: Affected stack area
+      options:
+        - Front‑end (Next.js)
+        - Back‑end (Supabase)
+        - Payments (Stripe)
+        - Gamification
+        - DevOps / CI
+        - Docs / Guides
+  - type: input
+    id: acceptance
+    attributes:
+      label: Definition of done
+      placeholder: "When PR passes tests and XYZ metric improves…"
